@@ -1,14 +1,14 @@
 var words = {
     pronoun: ["the", "our"],
-    adjective: ["great", "big"],
+    adjective: ["great", "big", "small"],
     noun: ["jogger", "racoon"]
 }
 var domain_generated = [];
 
 function domainGenerator() {
-    for(let i = 0; i < words.pronoun.length; i++) {
-        for(let j = 0; j < words.adjective.length; j++) {
-            for(let k = 0; k < words.noun.length; k++) {
+    for(let i = 0; i < 2; i++) {
+        for(let j = 0; j < 3; j++) {
+            for(let k = 0; k < 2; k++) {
                 domain_generated.push(" " + words.pronoun[i] + words.adjective[i] + words.noun[i] + ".com ");
             }
         }
